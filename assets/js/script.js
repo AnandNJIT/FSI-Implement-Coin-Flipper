@@ -25,3 +25,26 @@ document.addEventListener('DOMContentLoaded', function () {
         // TODO: Update the scoreboard (same logic as in flip button click handler)
 
 })
+
+
+let numberOfHeads = 0
+let numberOfTails = 0
+let percentageHeads = 0
+let percentageTails = 0
+let totalFlips = numberOfHEads + numberOfHeads
+let images = ["assets/images/penny-heads.jpg", "assets/images/penny-tails.jpg"]
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("flip").addEventListener('click', function() {
+        let randomNumber =  (Math.random() * image.length)
+        let randomImageSrc = images[randomNumber]
+
+        document.getElementById("penny").setAttribute("src", randomImageSrc)
+    
+        if (randomNumber == 0)  {
+
+            document.querySelector(".message-container").textContent = randomImage.message
+        }
+             console.log(images[randomNumber])
+    })
+})
